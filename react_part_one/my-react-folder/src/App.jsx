@@ -10,18 +10,32 @@ function App() {
       <Students></Students>
       <Students></Students>
       <Person></Person>
-      <Developer name = "Mozumdar" tech = "java"></Developer>
-      <Developer name = "Rakib" tech = "js"></Developer>
-      <Developer name = "patowary" tech = "python"></Developer>
+      <Developer name="Mozumdar" tech="java"></Developer>
+      <Developer name="Rakib" tech="js"></Developer>
+      <Developer name="patowary" tech="python"></Developer>
+      <Politician name="alif" team="teamOne"></Politician>
+      <Politician name="mehedi" team="teamTwo"></Politician>
     </>
   )
 }
 
+function Politician(props) {
+  return (
+    <div style={{
+      border: '2px solid blue',
+      borderRadius: '10px'
+    }}>
+      <p>Name : {props.name}</p>
+      <p>Team : {props.team}</p>
+    </div>
+  )
+}
+
 function Developer(props) {
-  return(
-    <div style = {{
-      border : '2px solid blue',
-      borderRadius : '10px'
+  return (
+    <div style={{
+      border: '2px solid blue',
+      borderRadius: '10px'
     }}>
       <h3>Developer : {props.name} </h3>
       <h3>Technology:{props.tech}</h3>

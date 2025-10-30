@@ -1,5 +1,6 @@
 
 import './App.css'
+import ToDo from './toDo'
 
 function App() {
 
@@ -7,7 +8,11 @@ function App() {
   return (
     <>
       <h1>react core concepts</h1>
-      <Students></Students>
+      <ToDo task = "learn react" isDone = {true}></ToDo>
+      <ToDo task = "revise react" isDone = {false}></ToDo>
+      <ToDo task = "learn js" isDone = {true}></ToDo>
+
+      {/* <Students></Students>
       <Students></Students>
       <Person></Person>
       <Developer name="Mozumdar" tech="java"></Developer>
@@ -15,7 +20,32 @@ function App() {
       <Developer name="patowary" tech="python"></Developer>
       <Politician name="alif" team="teamOne"></Politician>
       <Politician name="mehedi" team="teamTwo"></Politician>
+      <Player name="Tamim" run="5000"></Player>
+      <Player name="taskin" run="5000"></Player>
+      <Salami occasion="Roja Eid" amount="500"></Salami>
+      <Salami occasion="graduation" amount="1000" ></Salami> */}
+
     </>
+  )
+}
+
+function Salami({ occasion, amount }) {
+  return (
+    <div className='student'>
+      <p>slami for : {occasion}</p>
+      <p>amount : {amount}</p>
+    </div>
+  )
+}
+
+// const {name , run }= {name: 'taskin', run: '5000'}
+function Player({ name, run }) {
+
+  return (
+    <div className='student'>
+      <h3>Name : {name}</h3>
+      <h3>Run  : {run}</h3>
+    </div>
   )
 }
 
@@ -31,7 +61,13 @@ function Politician(props) {
   )
 }
 
+// {
+//     "name": "patowary",
+//     "tech": "python"
+// }
+
 function Developer(props) {
+  console.log(props);
   return (
     <div style={{
       border: '2px solid blue',

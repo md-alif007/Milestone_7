@@ -35,8 +35,18 @@ export default function Batsman() {
         setRuns(newRuns);
     }
 
+    const counterStyle = {
+        border: '2px solid yellow',
+        padding: '10px',
+        borderRadius: '8px',
+        backgroundColor: 'black',
+        color: 'white',
+        textAlign: 'center'
+
+    };
+
     return (
-        <div>
+        <div style={counterStyle}>
             <h3>Player : Batsman One</h3>
             <h3>Runs   : {runs}</h3>
             <h3><small>Six    : {sixes}</small></h3>

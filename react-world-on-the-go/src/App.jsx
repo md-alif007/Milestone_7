@@ -4,7 +4,7 @@ import Countries from './components/Countries/Countries';
 
 function App() {
 
-  const countriesPromise = fetch("https://restcountries.com/v3.1/name/deutschland")
+  const countriesPromise = fetch("https://restcountries.com/v3.1/all?fields=name,capital,region,subregion,languages,currencies,flags,area,population")
     .then(res => res.json());
 
 

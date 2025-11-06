@@ -3,12 +3,14 @@ import Country from '../Country/Country';
 
 const Countries = ({countriesPromise}) => {
     const countries = use(countriesPromise);
-    console.log(countries);
+    // console.log(countries);
     return (
         <div>
             <h1>Travelling countries : {countries.length}</h1>
             {
-                countries.map(country => <Countries country ={country}></Countries>)
+                countries.map(country => (
+                    <Country key={country.name.common} country={country}></Country>
+                ))
             }
         </div>
     );

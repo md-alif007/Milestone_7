@@ -8,9 +8,9 @@ const Bottles = ({ bottlesPromise }) => {
 
     const bottles = use(bottlesPromise);
 
-    const handleAddToCart = () => {
+    const handleAddToCart = (bottle) => {
 
-        console.log("Bottle will be added to cart");
+        console.log("Bottle will be added to cart",bottle);
     }
 
     return (

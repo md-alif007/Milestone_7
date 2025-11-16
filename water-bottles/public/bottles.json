@@ -1,0 +1,72 @@
+[
+  {
+    "id": "WB001",
+    "brand": "AquaPure",
+    "capacityMl": 750,
+    "material": "stainless-steel",
+    "insulated": true,
+    "leakProof": true,
+    "color": "matte navy",
+    "price": 19.99,
+    "rating": 4.6,
+    "inStock": true,
+    "description": "Double-wall vacuum insulated stainless bottle — keeps drinks cold 24h / hot 12h.",
+    "imageUrl": "https://example.com/images/aquapure-750.jpg"
+  },
+  {
+    "id": "WB002",
+    "brand": "HydroLite",
+    "capacityMl": 500,
+    "material": "bpa-free-plastic",
+    "insulated": false,
+    "leakProof": false,
+    "color": "translucent green",
+    "price": 7.5,
+    "rating": 4.1,
+    "inStock": true,
+    "description": "Lightweight, budget-friendly bottle with flip-top cap — great for gym use.",
+    "imageUrl": "https://example.com/images/hydrolite-500.jpg"
+  },
+  {
+    "id": "WB003",
+    "brand": "EverSip",
+    "capacityMl": 1000,
+    "material": "glass-with-sleeve",
+    "insulated": false,
+    "leakProof": true,
+    "color": "clear with teal sleeve",
+    "price": 15,
+    "rating": 4.4,
+    "inStock": false,
+    "description": "Thick borosilicate glass with silicone sleeve — clean taste, dishwasher safe (sleeve off).",
+    "imageUrl": "https://example.com/images/eversip-1000.jpg"
+  },
+  {
+    "id": "WB004",
+    "brand": "ThermaGo",
+    "capacityMl": 600,
+    "material": "stainless-steel",
+    "insulated": true,
+    "leakProof": true,
+    "color": "rose gold",
+    "price": 24.5,
+    "rating": 4.8,
+    "inStock": true,
+    "description": "Premium vacuum bottle with wide mouth and integrated tea infuser.",
+    "imageUrl": "https://example.com/images/thermago-600.jpg"
+  },
+  {
+    "id": "WB005",
+    "brand": "TrailMate",
+    "capacityMl": 850,
+    "material": "aluminum",
+    "insulated": false,
+    "leakProof": false,
+    "color": "camouflage",
+    "price": 12,
+    "rating": 3.9,
+    "inStock": true,
+    "description": "Durable aluminum bottle for hiking — light, with carabiner-friendly lid.",
+    "imageUrl": "https://example.com/images/trailmate-850.jpg"
+  }
+]

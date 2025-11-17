@@ -3,7 +3,7 @@ import { Suspense } from 'react'
 import './App.css'
 import Mobiles from './Components/Mobiles/Mobiles'
 
-const mobilePromise = fetch('../public/phones.json')
+const mobilePromise = fetch('./phones.json')
   .then(res => res.json())
 
 function App() {

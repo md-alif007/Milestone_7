@@ -4,8 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Blogs from './Components/Blogs/Blogs';
 
 
-const knowledgePromise = fetch('knowledge.json').then(res => res.json());
-console.log(knowledgePromise);
+
 
 function App() {
 
@@ -14,9 +13,18 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Suspense fallback={<h3>Informations are loading....</h3>}>
-          <Blogs knowledgePromise={knowledgePromise}></Blogs>
-      </Suspense>
+
+      <div className="main-container flex border rounded-2xl m-15 p-10 gap-10 bg-slate-400 text-center font-serif">
+
+        <div className="blogs-container w-[70%] bg-blue-200 border border-none rounded-sm text-black p-7">
+          <Blogs></Blogs>
+        </div>
+
+        <div className="bookmark-container w-[30%] bg-blue-200 border border-none rounded-sm text-black p-7">
+          bookmarks
+        </div>
+
+      </div>
     </>
   )
 }
